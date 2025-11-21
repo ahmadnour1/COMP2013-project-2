@@ -15,6 +15,7 @@ export default function CartContainer({
           {cartList.map((product) => (
             <CartCard
               key={product.id}
+              id={product._id}
               {...product}
               handleRemoveFromCart={handleRemoveFromCart}
               handleAddQuantity={handleAddQuantity}

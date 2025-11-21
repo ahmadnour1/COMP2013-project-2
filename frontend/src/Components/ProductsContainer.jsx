@@ -5,6 +5,8 @@ export default function ProductsContainer({
   handleAddQuantity,
   handleRemoveQuantity,
   handleAddToCart,
+  handleOnDelete,
+  handleOnEdit,
   productQuantity,
 }) {
   return (
@@ -16,6 +18,8 @@ export default function ProductsContainer({
           handleAddQuantity={handleAddQuantity}
           handleRemoveQuantity={handleRemoveQuantity}
           handleAddToCart={handleAddToCart}
+          handleOnDelete={handleOnDelete}
+          handleOnEdit={handleOnEdit}
           productQuantity={
             productQuantity.find((p) => p.id === product.id).quantity
           }
